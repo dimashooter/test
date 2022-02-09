@@ -1,0 +1,38 @@
+.commentsBtn {
+	margin-top: 0.5rem;
+}
+.cardSubtitle {
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	transition: all 0.5s;
+}
+.cardSubtitle.active {
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+.paginationItem {
+	padding: 0.5rem;
+	font-size: 0.7rem;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+.paginationItem.paginationItem__current {
+	background: #000;
+	color: #fff;
+}
+.paginationWrapper {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.card {
+	background: red;
+}
+.card.active {
+	background: green;
+}
